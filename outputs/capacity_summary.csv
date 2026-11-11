@@ -1,0 +1,4 @@
+line,average_daily_ridership,maximum_daily_ridership,maximum_PHPDT,average_PHPDT,required_trains_per_hour,required_headway_minutes,existing_trains_per_hour,frequency_difference,capacity_status
+Blue,184620.08818303046,219206.39257245595,13152.383554347356,11077.205290981829,11,5.454545454545454,14,-3,Existing frequency sufficient
+Green,159604.4265075137,191897.85743245424,11513.871445947256,9576.265590450823,10,6.0,10,0,Existing frequency sufficient
+Purple,85693.9087278438,99848.846271336,5990.93077628016,5141.6345236706275,5,12.0,7,-2,Existing frequency sufficient

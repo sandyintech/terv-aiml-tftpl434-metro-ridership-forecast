@@ -1,0 +1,71 @@
+{
+    "project_name": "Metro Rail Ridership Forecasting",
+    "project_id": "terv-aiml-tftpl434-metro-ridership-forecast",
+    "objective": "Forecast daily metro ridership 28 days ahead.",
+    "dataset": {
+        "records": 2669,
+        "columns": 8,
+        "start_date": "2022-07-01",
+        "end_date": "2025-06-30",
+        "lines": [
+            "Blue",
+            "Green",
+            "Purple"
+        ],
+        "data_type": "Synthetic demonstration dataset"
+    },
+    "best_model": "SARIMAX",
+    "final_metrics": {
+        "MAE": 10333.28780441249,
+        "RMSE": 20004.864979970305,
+        "MAPE": 2.496333462636107
+    },
+    "best_parameters": {
+        "n_estimators": 700,
+        "learning_rate": 0.02,
+        "max_depth": 8,
+        "num_leaves": 31
+    },
+    "forecast_period": {
+        "start": "2025-07-01",
+        "end": "2025-07-28"
+    },
+    "capacity_planning": [
+        {
+            "line": "Blue",
+            "average_daily_ridership": 184620.08818303046,
+            "maximum_daily_ridership": 219206.39257245595,
+            "maximum_PHPDT": 13152.383554347356,
+            "average_PHPDT": 11077.205290981829,
+            "required_trains_per_hour": 11,
+            "required_headway_minutes": 5.454545454545454,
+            "existing_trains_per_hour": 14,
+            "frequency_difference": -3,
+            "capacity_status": "Existing frequency sufficient"
+        },
+        {
+            "line": "Green",
+            "average_daily_ridership": 159604.4265075137,
+            "maximum_daily_ridership": 191897.85743245424,
+            "maximum_PHPDT": 11513.871445947256,
+            "average_PHPDT": 9576.265590450823,
+            "required_trains_per_hour": 10,
+            "required_headway_minutes": 6.0,
+            "existing_trains_per_hour": 10,
+            "frequency_difference": 0,
+            "capacity_status": "Existing frequency sufficient"
+        },
+        {
+            "line": "Purple",
+            "average_daily_ridership": 85693.9087278438,
+            "maximum_daily_ridership": 99848.846271336,
+            "maximum_PHPDT": 5990.93077628016,
+            "average_PHPDT": 5141.6345236706275,
+            "required_trains_per_hour": 5,
+            "required_headway_minutes": 12.0,
+            "existing_trains_per_hour": 7,
+            "frequency_difference": -2,
+            "capacity_status": "Existing frequency sufficient"
+        }
+    ]
+}
